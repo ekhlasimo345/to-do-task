@@ -26,18 +26,8 @@ function App() {
   return (
     <>
       <h1>My To do List</h1>
-      <form>
-        <input type="text" placeHolder="write here..."></input>
-        <button type="submit">submit</button>
-      </form>
       <ul>
-      {initialToDos.map(todo =>(
-        <li>
-          {todo.task} 
-        </li>
-      )
-
-      )}
+      {initialToDos.map}
       </ul>
     </>
   )
