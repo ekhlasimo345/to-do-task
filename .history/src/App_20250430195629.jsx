@@ -6,13 +6,13 @@ import Counter from './Counter'
 
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
       <h1>Fitness app</h1>
-      <Counter label="cardiotrain"/>
-      <Counter  label="freewighttrain"/>
-      <Counter label="aglassofwater"/>
+      <Counter />
+      <Counter />
       
 
     </>

@@ -10,9 +10,7 @@ function App() {
   return (
     <>
       <h1>Fitness app</h1>
-      <Counter label="cardiotrain"/>
-      <Counter  label="freewighttrain"/>
-      <Counter label="aglassofwater"/>
+      <Counter />
       
 
     </>
