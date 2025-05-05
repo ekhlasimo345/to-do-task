@@ -50,7 +50,7 @@ function App() {
       <h1>My To do List</h1>
       <form onSubmit={submitNewTodo}>
         <input type="text" placeHolder="write here..." value={newTask} onChange={e => setNewTask(e.target.value) }></input>
-        <button type="submit">submit</button>
+        <button class="submit-btn" type="submit">submit</button>
       </form>
       <ul>
       {allTodos.map(todo =>(
