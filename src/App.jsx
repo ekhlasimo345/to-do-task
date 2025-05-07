@@ -54,11 +54,13 @@ function App() {
       </form>
       <ul>
       {allTodos.map(todo =>(
-        <li>
+        <li><input type ="checkbox"
+        checked={todo.completed}
+        ></input>
           {todo.task} 
         </li>
+        
       )
-
       )}
       </ul>
     </>
