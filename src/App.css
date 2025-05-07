@@ -36,7 +36,13 @@
 .card {
   padding: 2em;
 }
-
+.button-disabled{
+  cursor: not-allowed
+}
+.button-active{
+  cursor: pointer;
+  
+}
 .read-the-docs {
   color: #888;
 }
