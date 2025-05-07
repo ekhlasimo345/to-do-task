@@ -37,7 +37,7 @@ function App() {
       let newTodos= allTodos.concat({
         id: allTodos.length + 1,
         task: newTask,
-        completed: false,
+        completed: true,
       })
       
       setAllTodos(newTodos)
@@ -54,8 +54,11 @@ function App() {
       </form>
       <ul>
       {allTodos.map(todo =>(
-        <li><input type ="checkbox"
+        <li>
+          <input type ="checkbox"
         checked={todo.completed}
+        
+        
         ></input>
           {todo.task} 
         </li>
