@@ -3,6 +3,8 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -17,8 +19,14 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-.submit-btn{
+.submit-btn {
   background-color: blue;
+}
+.block__flex {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @keyframes logo-spin {
   from {
