@@ -37,13 +37,20 @@ function App() {
       let newTodos= allTodos.concat({
         id: allTodos.length + 1,
         task: newTask,
-        completed: true,
+        completed: false,
       })
       
       setAllTodos(newTodos)
       setNewTask("")
     } 
+   
   }
+  function handleCheck(todoId){
+    setAllTodos(allTodos.map(todo => todo.id=== todoId ? {...todo, completed: !todo.completed} :todo))
+    
+    
+  }
+ 
 
   return (
     <>
@@ -55,7 +62,8 @@ function App() {
       <ul>
       {allTodos.map(todo =>(
         <li>
-          <input type ="checkbox"
+          <input type ="checkbox" onChange={() => handleCheck(todo.id)}
+
         checked={todo.completed}
         
         
@@ -68,6 +76,7 @@ function App() {
       </ul>
     </>
   )
+
 }
 
-export default App
+export default App;
