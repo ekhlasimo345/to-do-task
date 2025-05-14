@@ -1,12 +1,8 @@
-# React + Vite
+# Code review May 14th 2025
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The code is readable and works after fixing an unclosed tag
+I added the code for the conditional styling that strikes through the text when checked and changed the submitNewTodo function to use spread operator instead of concat. Both approaches are exchangeable but in React is more typical to save changes.
+Yo can find my comments right in the code
+Now you only need to add the delete button to complete the exercise
+Good job, keep coding!
+Carlos
