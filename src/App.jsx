@@ -28,23 +28,19 @@ function App() {
         id: allTodos.length + 1,
         task: newTask,
         completed: false,
-      });
-
-      setAllTodos(newTodos);
-      setNewTask("");
-    }
+      })
+      
+      setAllTodos(newTodos)
+      setNewTask("")
+    } 
+   
   }
-
-  // Add this new function to handle checkbox changes
-  function toggleTodoComplete(id) {
-    const updatedTodos = allTodos.map((todo) => {
-      if (todo.id === id) {
-        return { ...todo, completed: !todo.completed };
-      }
-      return todo;
-    });
-    setAllTodos(updatedTodos);
+  function handleCheck(todoId){
+    setAllTodos(allTodos.map(todo => todo.id=== todoId ? {...todo, completed: !todo.completed} :todo))
+    
+    
   }
+ 
 
   return (
     <section className={"block__flex"}>
@@ -61,19 +57,23 @@ function App() {
         </button>
       </form>
       <ul>
-        {allTodos.map((todo) => (
-          <li key={todo.id}>
-            <input
-              type="checkbox"
-              checked={todo.completed}
-              onChange={() => toggleTodoComplete(todo.id)}
-            ></input>
-            {todo.task}
-          </li>
-        ))}
+      {allTodos.map(todo =>(
+        <li>
+          <input type ="checkbox" onChange={() => handleCheck(todo.id)}
+
+        checked={todo.completed}
+        
+        
+        ></input>
+          {todo.task} 
+        </li>
+        
+      )
+      )}
       </ul>
-    </section>
-  );
+    </>
+  )
+
 }
 
 export default App;
