@@ -13,7 +13,7 @@ const initialToDos=[
   },
   {
     id: 2 ,
-    task:"coocking",
+    task:"cocking",
     completed : false,
   },
   {
